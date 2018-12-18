@@ -1,17 +1,17 @@
 <?php
 /*
-  Plugin Name: Zanto WP Translation
-  Plugin URI: http://zanto.org/
-  Description: Make blogs in a WordPress multisite translations of each other
-  Version: 0.3.4
-  Author: Ayebare Mucunguzi Brooks
-  Author URI: http://zanto.org
+  Plugin Name: MLMS
+  Plugin URI: https://github.com/uptimizt/mlms
+  Description: Multilingual Multisite - make sites in a multisite translations of each other
+  Version: 0.4
+  Author: uptimizt
+  Author URI: https://github.com/uptimizt
   Text Domain: Zanto
   Domain Path: /languages/
  */
 
 if ( $_SERVER[ 'SCRIPT_FILENAME' ] == __FILE__ )
-	die( 'Access denied.' );
+  die( 'Access denied.' );
 define( 'GTP_ZANTO_VERSION', '0.3.4' );
 define( 'GTP_NAME', 'Zanto Wordpress Translation Plugin' );
 define( 'GTP_REQUIRED_WP_VERSION', '3.1' ); // because of esc_textarea()
@@ -24,8 +24,8 @@ define( 'GTP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
  * Loads plugin translations
  */
 function zanto_load_lang_files() {
-	$lang_dir = GTP_PLUGIN_FOLDER . '/languages/';
-	load_plugin_textdomain( 'Zanto', false, $lang_dir );
+  $lang_dir = GTP_PLUGIN_FOLDER . '/languages/';
+  load_plugin_textdomain( 'Zanto', false, $lang_dir );
 }
 
 add_filter( 'wp_loaded', 'zanto_load_lang_files' );
@@ -38,8 +38,8 @@ add_filter( 'wp_loaded', 'zanto_load_lang_files' );
 $zwt_icon_url = GTP_PLUGIN_URL . 'images/logo-admin.gif';
 $zwt_menu_url = GTP_PLUGIN_URL . 'images/menu-icon.gif';
 if ( is_admin() ) {
-	require_once(GTP_PLUGIN_PATH . '/includes/notices/admin-notice-helper.php');
-	require_once(GTP_PLUGIN_PATH . '/includes/notices/email-notifications.php');
+  require_once(GTP_PLUGIN_PATH . '/includes/notices/admin-notice-helper.php');
+  require_once(GTP_PLUGIN_PATH . '/includes/notices/email-notifications.php');
 }
 require_once(GTP_PLUGIN_PATH . '/includes/install-requirements.php');
 $zwt_unfullfilled_requirments = zwt_requirements_missing();
@@ -50,33 +50,33 @@ $zwt_unfullfilled_requirments = zwt_requirements_missing();
 
 
 if ( !$zwt_unfullfilled_requirments ) {
-	require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-module.php');
-	require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-base.php');
-	require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-lang-switcher.php');
-	require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-widgets.php');
-	require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-mo.php');
-	require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-download-mo.php');
-	require_once(GTP_PLUGIN_PATH . '/includes/functions.php');
-	require_once(GTP_PLUGIN_PATH . '/includes/template-functions.php');
+  require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-module.php');
+  require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-base.php');
+  require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-lang-switcher.php');
+  require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-widgets.php');
+  require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-mo.php');
+  require_once(GTP_PLUGIN_PATH . '/classes/class.zwt-download-mo.php');
+  require_once(GTP_PLUGIN_PATH . '/includes/functions.php');
+  require_once(GTP_PLUGIN_PATH . '/includes/template-functions.php');
 
 
-	if ( class_exists( 'ZWT_Base' ) ) {
+  if ( class_exists( 'ZWT_Base' ) ) {
 
-		$zwt_site_obj = ZWT_Base::getInstance();
-		$zwt_language_switcher = new ZWT_Lang_Switcher();
+    $zwt_site_obj = ZWT_Base::getInstance();
+    $zwt_language_switcher = new ZWT_Lang_Switcher();
 
-		register_activation_hook( __FILE__, array(
-			$zwt_site_obj,
-			'activate'
-		) );
-		register_deactivation_hook( __FILE__, array(
-			$zwt_site_obj,
-			'deactivate'
-		) );
-	}
+    register_activation_hook( __FILE__, array(
+      $zwt_site_obj,
+      'activate'
+    ) );
+    register_deactivation_hook( __FILE__, array(
+      $zwt_site_obj,
+      'deactivate'
+    ) );
+  }
 } else {
-	add_action( 'admin_notices', 'zwt_requirements_error' );
-	zwt_deactivate_zanto();
+  add_action( 'admin_notices', 'zwt_requirements_error' );
+  zwt_deactivate_zanto();
 }
 
 /**
@@ -84,8 +84,8 @@ if ( !$zwt_unfullfilled_requirments ) {
  * @author Zanto Translate
  */
 function zwt_requirements_error() {
-	global $wp_version;
-	require_once(GTP_PLUGIN_PATH . '/views/requirements-error.php');
+  global $wp_version;
+  require_once(GTP_PLUGIN_PATH . '/views/requirements-error.php');
 }
 
 /**
@@ -101,8 +101,8 @@ function zwt_requirements_error() {
  * @return object The Zanto Translation object Instance
  */
 function Zanto_WT() {
-	global $zwt_site_obj;
-	return $zwt_site_obj;
+  global $zwt_site_obj;
+  return $zwt_site_obj;
 }
 
 ?>
