@@ -1,0 +1,264 @@
+/**
+ * @package Zanto admin css
+ * @author Zanto Translate
+ */
+ 
+ #zwt_wizard_progress_bar {
+background-color: #999;
+height: 10px;
+position: relative;
+border-radius: 0px 15px 15px 0px;
+-moz-border-radius: 0px 15px 15px 0px;
+}
+#zwt_edit_languages_info b, #zwt_edit_languages_info  strong{
+font-weight: 700;
+}
+#gtr_create_network{
+padding-top:26px
+}
+.select_site_language{
+padding:5px 0 26px 5px;
+}
+
+#zwt_wizard_progress {
+height: 10px;
+background-color: #ccc;
+margin: 12px 0 10px 0;
+width: 100%;
+border-radius: 0px 15px 15px 0px;
+-moz-border-radius: 0px 15px 15px 0px;
+}
+
+#zwt_wizard .zwt_wizard_step {
+font-size: 13px;
+width: 50%;
+float: left;
+font-weight: bold;
+}
+.gtr-disabled{
+
+}
+.zwt-selected{ background-color:#eff8fc;}
+input.zwt-select-site{margin: 0 15px 0 0}
+.zwt-wizard-button{float:right}
+.button-primary.zwt-wiz-submit, a.gtr-secondary-install{margin:10px !important}
+.pad-10px{padding:10px}
+img.admin-flag-icon{margin:0 2px !important}
+.zwt-trans-networks{padding:5px; border:1px solid #ddd}
+.right-border select{width: 150px}
+.transln_method  input{width:250px; font-family:Consolas,Monaco,monospace}
+#sortable { list-style-type: none; margin: 0; padding: 0; }
+#sortable li { margin: 0 3px 3px 3px;  float:left; border-radius:5px; -moz-border-radius: 5px; cursor: move; }
+..draggable li{ margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; height: 18px;}
+.ui-state-highlight{padding:4px}
+.zwt-tabs a:focus{
+    outline:0; /*removes the dotted border*/
+}
+.zwt-tabs{margin-top:30px;}
+#zwt_ls_footer li{
+display: inline;
+margin: 0 10px 0 0;
+padding: 0;
+white-space: nowrap;
+line-height: 25px;}
+
+#zwt_ls_footer {
+margin: 0;
+padding: 7px;
+text-align: center;
+border: 4px solid #fff;
+font: 11px Verdana, sans-serif;
+min-height: 15px;
+clear: both;
+background-color: #fff;
+border: 1px solid #cdcdcd;}
+
+#zwt_ls_footer ul{list-style: none;
+margin: 0;
+padding: 0;}
+
+#zwt_ls_footer ul li a{text-decoration: none;}
+.zwt_input_class{width:220px}
+.zwt_advanced_box{
+    border: 1px solid #dfdfdf;
+}
+
+.zwt_advanced_box h3{
+padding: 7px 5px 5px 15px;
+margin: 0 0 1em 0;
+}
+.zwt_advanced_box_inner{
+padding: 5px 0 0 15px;
+}
+.zwt_ajax_response .success{
+color:rgb(255, 122, 0);
+}
+.zwt_ajax_response .fail{
+color:red;
+}
+.zwt-ls-table th {
+    font-size: 1.1em;
+    font-weight: bold;
+	padding-right:2em;
+}
+.zwt-ls-codes td {
+    font-size: 1.1em;
+    font-weight: bold;
+	min-width:300px;
+}
+.zwt-ls-table tr{
+border-bottom:1px solid #ddd; 
+}
+.btp-post-icon,.btp-tax-icon{
+padding:2px;
+font-size:15px;
+color: #AAA
+}
+.btp-post-icon:hover,.btp-tax-icon:hover{
+color:#d54e21
+}
+.icon32 .fa{
+color: #ADADAD;
+font-size:3em;
+}
+#zwt_flag_url{
+height: 28px;
+line-height: 28px;
+padding: 2px;
+vertical-align: middle;
+}
+ input#zwt_flag_url[disabled] {
+    color: #7F7F7F;
+}
+#wpadminbar .fa{
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+text-shadow:none;
+color:#777;
+font-size:15px;
+}
+.zwt_notice{
+font-size: 1.2em;
+margin: 10px 0;
+padding: 6px;
+display: inline-block;
+background-color: #ffffe0;
+border: 1px solid #e6db55;
+}
+.updated .error{
+color: rgb(248, 118, 118);
+font-size: 1.5em;}
+.xliff-box{
+padding: 20px;
+border: 1px solid #ddd;}
+.zwt-icon-green{color:rgb(108, 172, 108)}
+.translated{color:#ddd}
+#ajax-saving-notice .spinner {
+display: block;
+float: left;
+margin: 0 5px 0 0;
+}
+#ajax-saving-notice{
+height: 40px;
+margin-left: 15px;
+float:left;
+}
+.zwt-button {
+    background: none repeat scroll 0 0 #3e93c2;
+    border: medium none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    padding: 0.5em 1em;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+}
+.zwt-button:hover {
+color:white;
+background: none repeat scroll 0 0 #3784AF;
+}
+/*Dashboard*/
+.addon-features{
+font-size:1.1em;
+}
+.addon-features i{
+color:#999;
+}
+.addon-features a{
+margin-left: 0.4em;
+}
+.featured-addon tfoot tr th, .featured-addon thead tr th {
+    font-size:1.2em
+}
+.about-wrap .feature-section .zanto-follow img {
+	background: none;
+	max-width: none;
+	float: none;
+}
+
+.about-wrap #showcase .feature-section img {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.about-wrap h3 {
+	line-height: 26px;
+}
+.about-wrap .feature-section {
+		margin-top: 0px;
+}
+.about-wrap .feature-section div {
+	text-align: center;
+}
+.about-wrap div.addon-features{
+text-align: justify;
+}
+
+.about-text.zanto-welcome {
+	margin: 1em 0;
+}
+
+.about-wrap .feature-section.three-col img.zanto-donate {
+	background: none;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	max-width: none;
+	float: none;
+}
+
+
+.images-stagger-right img {
+	float: right;
+	padding-left: 20px;
+}
+
+.images-stagger-left img {
+	float: left;
+	padding-right: 20px;
+}
+
+.zanto-follow {
+	margin-bottom: 11px;
+}
+
+.button-primary.review-zanto {
+	margin-top: 9px;
+}
+
+.zanto-upgrade-notice {
+	background-color: #FFFFE0;
+	border: 1px solid #E6DB55;
+	padding: 0px;
+	margin: 5px 0px;
+	text-align: center;
+}
+
+.zanto-upgrade-notice p {
+	line-height: 1em;
+}

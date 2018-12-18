@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<locales>
+  <es>
+    <es>
+    </es>
+    <es-cl>
+    </es-cl>
+    <es-pe>
+    </es-pe>
+    <es-ve>
+    </es-ve>
+  </es>
+   <pt>
+    <pt>
+    </pt>
+    <pt-br>
+    </pt-br>
+	<pt-pt>
+    </pt-pt>
+  </pt>
+  <en>
+    <en-us>
+	</en-us>
+	<en-au>
+	</en-au>
+	<en-gb>
+	<en-ca>
+	</en-ca>
+    </en-gb>
+  </en>
+</locales>
